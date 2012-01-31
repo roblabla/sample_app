@@ -14,7 +14,11 @@ describe "Static pages" do
 		it "should have the title 'Home'" do
 			visit '/static_pages/home'
 			page.should have_selector('title',
+<<<<<<< HEAD
 															 :title => "#{:title} Home")
+=======
+															 :text => '| Home')
+>>>>>>> b94f1763aed70bef65fae8752cec09d36da20ef9
 		end
 	end
 
