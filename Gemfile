@@ -12,12 +12,23 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+<<<<<<< HEAD
   gem 'sass-rails',   '3.2.3'
   gem 'coffee-rails', '3.2.0'
   gem 'uglifier', '1.0.3'
 end
 
 gem 'jquery-rails', '2.0.0'
+=======
+	gem 'sass-rails', '3.2.3'
+	gem 'coffee-rails', '3.2.2'
+	gem 'uglifier', '1.0.3'
+end
+
+gem 'jquery-rails', '2.0.0'
+
+gem 'therubyracer', '~> 0.10.0beta1'
+>>>>>>> 47fab000580f916d9f902bf3393d600c4bab8490
 
 group :test do
 	gem 'turn', '0.8.2', :require => false
