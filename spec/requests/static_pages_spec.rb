@@ -14,11 +14,7 @@ describe "Static pages" do
 		it "should have the title 'Home'" do
 			visit '/static_pages/home'
 			page.should have_selector('title',
-<<<<<<< HEAD
-															 :title => "#{:title} Home")
-=======
-															 :text => '| Home')
->>>>>>> b94f1763aed70bef65fae8752cec09d36da20ef9
+						  :title => "#{:title} Home")
 		end
 	end
 
@@ -33,7 +29,7 @@ describe "Static pages" do
 		it "should have the title 'Help'" do
 			visit '/static_pages/help'
 			page.should have_selector('title', 
-															 :text => "#{title} Help")
+															 :text => "#{:title} Help")
 		end
 	end
 
@@ -47,7 +43,7 @@ describe "Static pages" do
 		it "should have the title 'About Us'" do
 			visit '/static_pages/about'
 			page.should have_selector("title", 
-															 :text => "#{title} About Us")
+															 :text => "#{:title} About Us")
 		end
 	end
 
@@ -61,7 +57,7 @@ describe "Static pages" do
 		it "should have the title 'Contact Us'" do
 			visit '/static_pages/contact'
 			page.should have_selector('title', 
-															 :text => "#{title} Contact Us")
+															 :text => "#{:title} Contact Us")
 		end
 	end
 end
